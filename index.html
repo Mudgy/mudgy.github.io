@@ -1,45 +1,36 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="main.css" />
     <title> Wheeler Films </title>
     <script>
 
-      function answer(){
-        var radio = document.getElementsByName("trivia");
-        var selection = false;
-        var message = "";
-        for(var i = 0; i < radio.length; i++){
-          if(radio[i].value == "yes" && radio[i].checked == true){
-            selection = true;
-          }
-        }
-        if(selection == true){
-          message = message + "<b><p style='color:green'>Great Job!</p></b>";
-        } else {
-          message = message + "<b><p style='color:red'>Try Again</p></b>";
-        }
-          document.getElementById("response").innerHTML = message;
-      }
     </script>
     <style>
     </style>
   </head>
   <body id="background">
-    <header class="about_T"><center>Wheeler Films</center></header>
-    <center><h1> Home </h1></center>
-    <nav>
-      <ul id="navmenu">
-        <li class="navitem"><a href="about.html"> About </a></li>
-        <li class="navitem"><a href="movies.html"> Movies </a></li>
-        <li class="navitem"><a href="#"> Home </a></li>
-        <li class="navitem"><a href="wfplus.html"> Wheeler Films+ </a></li>
-      </ul>
-    </nav>
-    <img width="1500" src="Wheeler Films.gif">
-    <p class="home_p"> Watch Wheeler Films movies from this website, or <a href="https://www.youtube.com/channel/UCv65xsnjxnijqB6tE_jMHBQ"> click here </a> to see them on Youtube.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-4-sm">
+          <header class="about_T"><center>Wheeler Films</center></header>
+          <center><h1> Home </h1></center>
+          <nav>
+            <ul id="navmenu">
+              <li class="navitem"><a href="about.html"> About </a></li>
+              <li class="navitem"><a href="movies.html"> Movies </a></li>
+              <li class="navitem"><a href="#"> Home </a></li>
+              <li class="navitem"><a href="wfplus.html"> Wheeler Films+ </a></li>
+            </ul>
+          </nav>
+          <img width="1400" src="Wheeler Films 2.0.gif">
+          <p class="home_p"> Watch Wheeler Films movies from this website, or <a href="https://www.youtube.com/channel/UCfJHPhC6p_qgUG4C5DWg29A"> click here </a> to see them on Youtube. Make sure to subscribe!</p>
 
-    <p class="about_T"> News </p>
-    <p id="news"> Animal actor Cheeks the Hamster, star of White Terror, has died. Stay tuned for a possible documentery about White Terror in the upcoming Wheeler Films+ feature. 1/9/23 </p>
-    <p id="news"> Wheeler Films will soon be releasing a Wheeler Films+ feature to this website. Users will be able to watch exclusive content and videos! 1/9/23 </p>
+          <p class="about_T"> News </p>
+          <p class="news"> Animal actor Cheeks the Hamster, star of White Terror, has died. Stay tuned for a possible documentery about White Terror in the upcoming Wheeler Films+ feature. 1/9/23 </p>
+          <p class="news"> Wheeler Films will soon be releasing a Wheeler Films+ feature to this website. Users will be able to watch exclusive content and videos! 1/9/23 </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
